@@ -1,0 +1,185 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+p{
+    font-size: 32px;
+    color: #000000;
+}
+h2{
+    font-size: 64px;
+    color: #007765;
+    text-align: center;
+    margin-bottom: 16px;
+}
+a{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+section{
+    padding-top: 48px;
+    padding-bottom: 92px;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 20px 0 20px 0;
+    background-color: #007765;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    min-width: 424px;
+}
+.main__header{
+    background-image: url(/img/image.png);
+    padding: 160px 0 160px 0;
+}
+.main__title{
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
+
+.problem{
+    background-color: #EEEEEE;
+}
+.problem__title{
+    margin-bottom: 16px;
+}
+.problem__text{
+    margin-bottom: 30px;
+}
+.problem__text_bold{
+    font-weight: bold;
+}
+
+.third-part{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url(/img/bgBlue.png);
+}
+.third-part__subtitle{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+}
+.intro{
+    background-color: #EEEEEE;
+}
+
+.intro__text{
+    margin-bottom: 30px;
+}
+.intro__wrapper{
+    display: flex;
+}
+.intro__wrapper img{
+    position: relative;
+    top: 18px;
+}
+.intro__text_bgimage{
+    margin-left: 50px;
+}
+.team__list{
+   display: flex;
+   flex-wrap: wrap;
+}
+.team__item{
+    width: 33%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
