@@ -8,7 +8,7 @@ body{
 }
 
 .progress{
-  stroke: rgb(59, 56, 56);
+  stroke: #7012CE;
   fill: none;
 
   stroke-width: 10;
