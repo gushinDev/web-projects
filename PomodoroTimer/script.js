@@ -4,7 +4,7 @@ let radius = progressCircle.r.baseVal.value;
 //circumference of a circle = 2πr;
 let circumference = radius * 2 * Math.PI;
 progressCircle.style.strokeDasharray = circumference;
-
+setProgress(0)
 //0 to 100
 
 
@@ -31,7 +31,7 @@ function myLoop() {
 }
 
 
-function setProgress() {
+function setProgress(percent) {
   progressCircle.style.strokeDashoffset = circumference - (percent / 100) * circumference;
 }
 
