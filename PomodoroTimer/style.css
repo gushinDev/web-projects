@@ -2,7 +2,7 @@ body{
   background-color: #070417;
 }
 .track{
-  stroke-width: 10;
+  stroke-width: 20;
   stroke: #1B143F;
   fill: none;
 }
@@ -11,13 +11,14 @@ body{
   stroke: #7012CE;
   fill: none;
 
-  stroke-width: 15;
+  stroke-width: 20;
   stroke-dasharray: 630;
   stroke-dashoffset: 500;
   stroke-linecap: round;
 
   transform: rotate(270deg);
   transform-origin: center;
+  transition: all 0.8s
 }
 .wrapper{
   position: absolute;

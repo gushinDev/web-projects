@@ -9,7 +9,8 @@ setProgress(0)
 
 
 let i = 0; 
-let seconds = 25 * 60;
+let startSeconds = 60;
+let seconds = startSeconds;
 myLoop();
 
 function myLoop() {
@@ -18,11 +19,10 @@ function myLoop() {
     progressCircle.style.strokeDashoffset = circumference - (i / seconds) * circumference;
     i++;
     if(i === seconds + 1) {
-      i = 0;
-      seconds = 3;
+      i = 1;
+      seconds = startSeconds;
     }
     if(i < seconds + 1) {
-      console.log(i, seconds)
       myLoop();
     }
     

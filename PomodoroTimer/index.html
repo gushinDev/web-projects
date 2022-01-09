@@ -8,12 +8,19 @@
   <title>Document</title>
 </head>
 <body>
+  <defs>
+    <linearGradient id="linear-gradient">
+      <stop offset="0%" stop-color="gold"/>
+      <stop offset="100%" stop-color="teal"/>
+    </linearGradient>
+    </defs>
   <div class="wrapper">
     <svg width="300" height="300">
       <circle r="120" cx="150" cy="150" class="track"></circle>
-      <circle r="120" cx="150" cy="150" class="progress"></circle>
+      <circle r="120" cx="150" cy="150" class="progress" fill="none" stroke="url(/#linear-gradient)"></circle>
     </svg>
   </div>
+  
     <script src="script.js"></script>
 </body>
 </html>
