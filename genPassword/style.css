@@ -7,6 +7,7 @@ button{
     padding: 5px 20px;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 button:not(:first-child) {
     margin-left: 10px;
@@ -106,7 +107,7 @@ body{
     align-items: center;
 }
 
-input[type=text] {
+input[type=number] {
     width: 100px;
     height: 30px;
 }

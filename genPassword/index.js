@@ -23,3 +23,24 @@ range.addEventListener('input', (event)=>{
     numberOfLetters.value = event.target.value;
     generatorText.textContent = generatePassword(numberOfLetters.value);
 })
+
+
+//Copy text
+let copyBtn = document.querySelector('.btn__copy');
+
+copyBtn.addEventListener('click', (event)=>{
+        
+    let range = document.createRange();
+    range.selectNode(document.querySelector(".generator__text"));
+    window.getSelection().removeAllRanges();  
+    window.getSelection().addRange(range); 
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+
+})
+
+//Update button
+let updateButton = document.querySelector('.btn__update');
+updateButton.addEventListener('click', (event)=>{
+    generatorText.textContent = generatePassword(document.querySelector('#numberLetters').value)
+})
