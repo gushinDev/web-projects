@@ -12,7 +12,7 @@ body{
 }
 .title{
     text-align: center;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 .timer{
     width:600px;
@@ -64,7 +64,6 @@ button{
     padding: 10px 20px;
     border: none;
     border-radius:5px;
-    text-transform: uppercase;
     margin-left: 10px;
     margin-right: 10px;
     
